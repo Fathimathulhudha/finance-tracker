@@ -1,17 +1,64 @@
-# React + Vite
+# Finance Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple personal finance tracker web application where users can add income and expense transactions, view summaries, and analyze spending.
 
-Currently, two official plugins are available:
+## Live Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend: https://finance-tracker-4al4wn4uc-hudha.vercel.app  
+Backend: https://finance-tracker-backend-production-2407.up.railway.app  
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add transactions (income and expense)
+- Fields: amount, category, type, date, note (optional)
+- View list of all transactions
+- Filter transactions by category or date
+- Summary includes:
+  - Total income
+  - Total expense
+  - Net balance
+  - Top spending category
+- Chart showing spending by category
+- Simple insight based on spending data
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# finance-tracker" 
+Frontend:
+- React
+- Axios
+
+Backend:
+- Node.js
+- Express.js
+
+Database:
+- MongoDB
+
+## Project Structure
+
+finance-tracker/
+client/
+server/
+
+## Setup Instructions
+
+### Clone Repository
+git clone https://Fathimathulhudha/finance-tracker.git
+git clone https://Fathimathulhudha/finance-tracker-backend.git
+cd finance-tracker
+
+### Backend Setup
+cd server
+npm install
+npm start
+
+### Frontend Setup
+cd client
+npm install
+npm start
+
+## Notes
+
+- Do not push node_modules or .env to GitHub
+- Update API URL before deployment
+- Backend must be running for frontend to work properly
